@@ -1,4 +1,4 @@
-# springboot_crud_security_aop
+# springboot_cqrs_query_security
 
 ***
 
