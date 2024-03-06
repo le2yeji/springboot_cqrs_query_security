@@ -1,18 +1,12 @@
 package com.kt.edu.thirdproject.common;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kt.edu.thirdproject.common.controller.JwtAuthenticationController;
-import com.kt.edu.thirdproject.common.domain.JwtRequest;
-import com.kt.edu.thirdproject.employee.query.EmployeeQueryService;
-import com.kt.edu.thirdproject.employee.query.EmployeeQueryRepository;
+import com.kt.edu.thirdproject.employee.query.service.EmployeeService;
 import org.junit.jupiter.api.Test;
-import com.kt.edu.thirdproject.common.service.JwtUserDetailsService;
 import com.kt.edu.thirdproject.common.util.JwtTokenUtil;
-import lombok.With;
 import org.junit.jupiter.api.extension.ExtendWith;
 //import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
@@ -21,9 +15,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 //import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.bind.annotation.CrossOrigin;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -46,7 +37,7 @@ public class JwtAuthenticationControllerTest {
     private JwtTokenUtil jwtTokenUtil;
 
     @MockBean
-    private EmployeeQueryService employeeQueryService;
+    private EmployeeService employeeQueryService;
 
     //@Autowired
     //private ObjectMapper objectMapper;

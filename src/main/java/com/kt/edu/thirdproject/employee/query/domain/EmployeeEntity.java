@@ -1,4 +1,4 @@
-package com.kt.edu.thirdproject.employee.domain;
+package com.kt.edu.thirdproject.employee.query.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.swagger.v3.oas.annotations.media.Schema;
