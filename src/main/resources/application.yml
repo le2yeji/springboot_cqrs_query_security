@@ -10,9 +10,16 @@ spring:
     active: prd
   banner:
     location: "classpath:banner.txt"
-# cache 사용을 위해 cache name 설정
+  # caffein cache 사용을 위해 cache name 설정
+  #cache:
+  #  cache-names: employee
   cache:
-    cache-names: employee
+    type: redis
+  data:
+    redis:
+      host: 211.252.87.34 # 127.0.0.1
+      port: 30020 # 6379
+
 #  security:
 #    user:
 #      name: admin
@@ -49,4 +56,3 @@ app-info:
   license_url: "https://github.com/kt-cloudnative/education/"
   version: "@app.build.timestamp@"
   doc-desc: "교육용"
-
