@@ -45,12 +45,12 @@
 ////        }
 ////        // SHA256 PW비교 END
 //        // RSA 복호화 진행
-////        DecryptService decryptService = new DecryptService();
-////
-////        String decryptedData = decryptService.login(authenticationRequest.getPassword());
-////        authenticationRequest.setPassword(decryptedData);
-////        log.info("authenticationRequest.getPassword(): " + authenticationRequest.getPassword());
-//        // RSA 복호화 진행 끝
+//        DecryptService decryptService = new DecryptService();
+//
+//        String decryptedData = decryptService.login(authenticationRequest.getPassword());
+//        authenticationRequest.setPassword(decryptedData);
+//        log.info("authenticationRequest.getPassword(): " + authenticationRequest.getPassword());
+//         //RSA 복호화 진행 끝
 //        log.info("[{}] ***************authenticationRequest end",authenticationRequest);
 //        authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
 //
